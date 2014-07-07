@@ -3,7 +3,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-public class CameraMover : MonoBehaviour 
+public class CameraMover : LugusSingletonExisting<CameraMover> 
 {
 	public Transform CameraTarget = null;
 	protected Vector3 targetOffset = Vector3.zero;
